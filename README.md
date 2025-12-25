@@ -2,52 +2,60 @@
 
 Projeto de blog educacional desenvolvido como parte do **Tech Challenge**, utilizando a plataforma **OutSystems (low-code)**.
 
-O objetivo da aplicação é fornecer um canal de comunicação onde **professores** possam publicar recados e **alunos** possam visualizar os conteúdos de forma segura e organizada, respeitando níveis de acesso distintos.
+O sistema foi projetado para simular um ambiente real de comunicação educacional, permitindo que **professores publiquem recados** e **alunos visualizem os conteúdos**, respeitando regras claras de autenticação, autorização e separação de responsabilidades.
 
 ---
 
 ## Visão Geral
 
-O BlogEducaMais simula um sistema real de comunicação educacional, com controle de acesso por papéis (roles), interface intuitiva e funcionalidades completas de CRUD para professores.
+O BlogEducaMais é uma aplicação web educacional com **controle de acesso por papéis (roles)**, desenvolvida com foco em:
 
-Este repositório **não contém o código-fonte tradicional**, pois o projeto foi desenvolvido integralmente na plataforma OutSystems.  
-Aqui estão centralizados a **documentação**, o **fluxo do sistema**, o **vídeo demonstrativo** e os **artefatos do projeto**.
+- organização lógica do sistema
+- segurança de acesso
+- experiência do usuário
+- clareza no fluxo funcional
+
+Este repositório **não contém código-fonte tradicional**, pois o projeto foi desenvolvido integralmente na plataforma **OutSystems**.  
+Aqui estão centralizados os **artefatos técnicos**, **documentação**, **fluxo do sistema** e **material demonstrativo** do projeto.
 
 ---
 
 ## Funcionalidades
 
-### 👨‍🏫 Professor
-- Criar recados
-- Editar recados
-- Deletar recados
-- Visualizar lista completa
+### 👨‍🏫 Perfil Professor
+- Criar novos recados
+- Editar recados existentes
+- Excluir recados
+- Visualizar lista completa de recados
 - Barra de pesquisa
-- Dark Mode
+- Modo escuro (Dark Mode)
 
-### 👨‍🎓 Aluno
+### 👨‍🎓 Perfil Aluno
 - Visualizar lista de recados
-- Ler detalhes do recado
+- Acessar detalhes do recado (somente leitura)
 - Barra de pesquisa
-- Dark Mode
-- Tentativas de criação/edição/exclusão são bloqueadas por regra de negócio
+- Modo escuro (Dark Mode)
+- Tentativas de criação, edição ou exclusão são bloqueadas por regra de negócio
 
 ---
 
-## Controle de Acesso
+## Controle de Acesso e Segurança
 
-- Autenticação e autorização gerenciadas pelo sistema de **Roles do OutSystems**
-- Validações críticas realizadas na **camada lógica**, garantindo segurança mesmo em tentativas de acesso indevido
+- Autenticação e autorização gerenciadas pelo **sistema de Roles do OutSystems**
+- Validações críticas aplicadas na **camada lógica**, garantindo que ações indevidas sejam bloqueadas mesmo em tentativas manuais
+- Separação clara entre permissões de aluno e professor
 
 ---
 
 ## Fluxo do Sistema
 
-O diagrama abaixo representa:
-- Fluxo de autenticação
-- Identificação do papel do usuário
-- Diferenças entre permissões de aluno e professor
-- Ações permitidas e bloqueadas
+O fluxograma abaixo representa:
+
+- fluxo de autenticação
+- verificação de usuário logado
+- identificação do papel do usuário
+- permissões e restrições de cada perfil
+- ações permitidas e bloqueadas no sistema
 
 ![Fluxograma do Sistema](FluxogramaBlogEducaMais.png)
 
@@ -58,7 +66,7 @@ O diagrama abaixo representa:
 - OutSystems (Low-code)
 - OutSystems Service Studio
 - OutSystems Cloud
-- JavaScript (Dark Mode e interações)
+- JavaScript (interações e Dark Mode)
 - CSS (customizações visuais)
 - Controle de acesso por Roles
 
@@ -66,26 +74,50 @@ O diagrama abaixo representa:
 
 ## Vídeo Demonstrativo
 
-📺 Demonstração completa do projeto no YouTube:  
-👉 **[[link do vídeo aqui](https://youtu.be/neUk1VxwwbE)]**
+📺 Demonstração completa do projeto disponível no YouTube:  
+👉 https://youtu.be/neUk1VxwwbE
+
+O vídeo apresenta:
+- visão geral da aplicação
+- fluxo de login
+- diferenciação de permissões entre aluno e professor
+- funcionalidades principais do sistema
 
 ---
 
 ## Documentação
 
-A documentação completa do projeto está disponível neste repositório:
+A documentação técnica completa do projeto está disponível neste repositório:
 
-📄 `Documentação_do_Projeto_BlogEducaMais.pdf`
+📄 **Documentação_do_Projeto_BlogEducaMais.pdf**
 
 ---
 
 ## Observação Importante
 
-Este repositório tem caráter **documental e demonstrativo**, servindo como evidência técnica do projeto desenvolvido na plataforma OutSystems.
+Este repositório tem caráter **documental e demonstrativo**, servindo como evidência técnica do projeto desenvolvido na plataforma OutSystems, incluindo análise de requisitos, fluxo funcional e validações de negócio.
 
 ---
 
 ## Autor
 
-Igor Carvalho  
-Projeto desenvolvido para fins acadêmicos e portfólio.
+## Equipe do Projeto (Tech Challenge)
+
+Projeto desenvolvido para fins acadêmicos e portfólio, com foco em arquitetura lógica, segurança e organização de sistemas.
+
+**Integrantes:**
+  
+- Igor Carvalho  
+  GitHub: https://github.com/igorcarvalhodevs    
+
+- Igor Dutra Pereira  
+  GitHub: https://github.com/IgorDutraPereira
+
+- Arthur Cruz  
+  GitHub: https://github.com/ArthurCruzADS
+
+- Henrique Rodrigues  
+  GitHub: https://github.com/henri-ralmeida
+
+- Vincenzo Rivelli  
+  GitHub: https://github.com/Vint000
